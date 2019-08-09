@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: grey;
+    height: 100%;
+    background-image: url("../icons/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.portrait {
+    position: relative;
+    float: left;
+    margin: 10px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    border: 3px solid grey;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    border-radius: 25%;
+    overflow: hidden;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+img {
+    transition: all 200ms;
+}
+
+.champions .portrait:hover img {
+    transform: scale(1.1);
+}
+
+.levelOne {
+    border-color: grey;
+}
+
+.levelTwo {
+    border-color: green;
+}
+
+.levelThree {
+    border-color: blue;
+}
+
+.levelFour {
+    border-color: purple;
+}
+
+.levelFive {
+    border-color: gold;
+}
+
+h3 {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.row {
+    clear: both;
+}
+
+.imgFix {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+    background: rgba(253, 253, 253, 0.8);
+    box-shadow: 0px 0px 4px 5px rgba(66, 66, 66, 0.5);
+    min-height: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+}
+
+main div {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+img {
+    padding: 0;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.champions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+main div {
+    padding-left: 25px;
+}
+
+.have {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+main .have .portrait, main .need .portrait {
+    cursor: default;
+}
